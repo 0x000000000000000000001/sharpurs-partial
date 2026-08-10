@@ -1,1 +1,1 @@
-let _unsafePartial f = (unbox<obj -> obj> f) (box null)
+let _unsafePartial f = sharpurs_apply f (box null)
